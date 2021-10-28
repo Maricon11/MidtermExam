@@ -1,0 +1,51 @@
+<app-navigation title='Profile'></app-navigation>
+<div class='profile-container'>
+  <div class='content-container'>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <img mat-card-avatar src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/s640x640/219352918_3110271812631149_4247638899608879470_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGrkBkOGWOdnyxi42DWc1GT2xz1yu_6V-LbHPXK7_pX4l2kNAf3usaE6R8DOt5AvMRlG_Y6xCBCOYMqC0xvpxUN&_nc_ohc=_HTXrWuOyaMAX_8dtgG&_nc_ht=scontent.fcgy2-2.fna&oh=42f94b3aec942c52d24d2285701b3513&oe=619FBCD5" alt="Avatar" title="Anime">
+        <mat-card-title>Maricon B. Castro</mat-card-title>
+        <mat-card-subtitle>BSIT-3D</mat-card-subtitle>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/93479676_2684734735184861_4864222695203536896_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGJfh_GV4bussVMbl2sW5KHwiDsq_COGXHCIOyr8I4ZcXXGlKOmNi5EzrmUUMfoJi6uhZSzVkSh6mE2tt9h-Q7e&_nc_ohc=zw3q-2XND4YAX9ofmBP&_nc_ht=scontent.fcgy2-2.fna&oh=9460dd26bca5cafa83bd83c201b1e8fa&oe=619ECC1E" alt="Maricon Castro" title="Maricon Castro">
+        <mat-list>
+          <mat-list-item>
+            <mat-icon>School</mat-icon>
+            <p>Name of School: Eastern Visayas State University- Main Campus</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon>info</mat-icon>
+            <p>Course: Bachelor of Science in Information Technology (BSIT)</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon>done</mat-icon>
+            <p>Age: 20</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon>location_on</mat-icon>
+            <p>Address: Brgy. Tibak Sta. Fe, Leyte</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon>phone_contact</mat-icon>
+            <p>Contact Number: +639658438967</p>
+          </mat-list-item>
+
+          <mat-card-actions>
+            <button mat-button (click)='isClickLike=!isClickLike'
+                    [ngClass]='{"like" : isClickLike }' ><mat-icon>thumb_up</mat-icon></button>
+            <button mat-button (click)='isClickHeart=!isClickHeart'
+                    [ngClass]='{"heart" : isClickHeart }'><mat-icon>favorite</mat-icon></button>
+          </mat-card-actions>
+
+
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
